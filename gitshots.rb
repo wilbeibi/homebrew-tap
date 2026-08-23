@@ -4,8 +4,8 @@
 class Gitshots < Formula
   desc "Webcam frame on every git commit, date-stamped like a 1993 point-and-shoot"
   homepage "https://github.com/wilbeibi/gitshots"
-  url "https://github.com/wilbeibi/gitshots/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "9ecb7b5c16f2b7bccc0a937e0a1f974741edf3639b7ef54e70a8b23e7c9265fd"
+  url "https://github.com/wilbeibi/gitshots/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "71326c3b89f07d191702fdae41672189ff72e66157fd63dc1b30d1f28434ed69"
   license "MIT"
 
   # Pillow and piexif are fetched by uv at first run, so there is no Python
