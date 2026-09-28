@@ -5,21 +5,21 @@
 class Catchup < Formula
   desc "Hand off coding-agent context across Claude Code, Codex, and more"
   homepage "https://catchup.pages.dev"
-  version "1.1.1"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/wilbeibi/catchup/releases/download/v1.1.1/catchup_darwin_amd64.tar.gz"
-      sha256 "b3b0d340298031e713b58f5fee462378e14ceb8cbe8f30fa395f21c1ba66ab98"
+      url "https://github.com/wilbeibi/catchup/releases/download/v1.2.0/catchup_darwin_amd64.tar.gz"
+      sha256 "d9e64baa2ef2a0fb17923c498352ac66e883446264872b47916b824c7ba4c53c"
 
       define_method(:install) do
         bin.install "catchup"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/wilbeibi/catchup/releases/download/v1.1.1/catchup_darwin_arm64.tar.gz"
-      sha256 "b2e63ef3e0a84771f31fecf39e56f512cf3b9371d956f6c0e56b920268b57d7d"
+      url "https://github.com/wilbeibi/catchup/releases/download/v1.2.0/catchup_darwin_arm64.tar.gz"
+      sha256 "8142c1c9bc5c23e4ab096b6ad8e75749ae28471fb7397e0acf557cb92865f094"
 
       define_method(:install) do
         bin.install "catchup"
@@ -29,15 +29,15 @@ class Catchup < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wilbeibi/catchup/releases/download/v1.1.1/catchup_linux_amd64.tar.gz"
-      sha256 "aa8121394c78da1293c40842ce5258f18aeb4465914d2fbce30b0de5dd43b356"
+      url "https://github.com/wilbeibi/catchup/releases/download/v1.2.0/catchup_linux_amd64.tar.gz"
+      sha256 "a24e1101795a78e9083194a3baf7421e1687b5734b2e4b345ab96c3317eff9f3"
       define_method(:install) do
         bin.install "catchup"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wilbeibi/catchup/releases/download/v1.1.1/catchup_linux_arm64.tar.gz"
-      sha256 "b42a6deedeb8095796b02167e3f3f7bc1dc1670916d9667d25912598bc958220"
+      url "https://github.com/wilbeibi/catchup/releases/download/v1.2.0/catchup_linux_arm64.tar.gz"
+      sha256 "a585b7f17cb45cc410b6bc241ce446d2169a7949015dac2aa3af0171058b8d32"
       define_method(:install) do
         bin.install "catchup"
       end
